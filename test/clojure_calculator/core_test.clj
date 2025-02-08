@@ -1,6 +1,6 @@
 (ns clojure-calculator.core-test
-  (:require [clojure.test :refer :all]
-            [clojure-calculator.core :refer :all]))
+  (:require [clojure.test :refer [deftest is]]
+            [clojure-calculator.core :refer [add subtract multiply divide]]))
 
 (deftest test-add
   (is (= (add 1 2) 3)))
